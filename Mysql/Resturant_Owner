@@ -1,0 +1,21 @@
+// create a Sql table for resturant Owner
+
+
+create table resturant_owner(
+Resturant_ID int not null unique,
+Resturant_Name varchar(50) not null,
+Resturant_Address varchar(200) not null,
+Resturant_Location varchar(45) not null,
+Open_time time not null,
+close_time time not null,
+GST_Number int not null unique,
+Cuisins_List varchar(150) not null,
+Contact_Number int not null,
+Bank_Account_number int not null,
+Email varchar(45) not null,
+Login_Password varchar(20) not null,
+Avg_rating float not null,
+Order_Accept_Status varchar(10),
+primary key(Resturant_ID),
+unique(Resturant_ID)
+);
